@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شركتك العقارية</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        section {
+            padding: 40px 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        .property {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+
+        .property-card {
+            width: 300px;
+            margin: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .property-card:hover {
+            transform: scale(1.05);
+        }
+
+        .property-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .property-details {
+            padding: 15px;
+        }
+
+        .features {
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .feature-icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .contact-form {
+            background-color: #fff;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        .form-group button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .form-group button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>شركتك العقارية</h1>
+    </header>
+
+    <section id="intro" class="features">
+        <div class="container">
+            <h2>مرحبًا بك في رحلتك العقارية</h2>
+            <p>اكتشف المنزل المثالي لك مع خدماتنا العقارية المتخصصة.</p>
+            <div class="property">
+                <div class="property-card">
+                    <img src="property1.jpg" alt="عقار 1">
+                    <div class="property-details">
+                        <h3>عقار 1</h3>
+                        <p>وصف عقار 1.</p>
+                    </div>
+                </div>
+
+                <div class="property-card">
+                    <img src="property2.jpg" alt="عقار 2">
+                    <div class="property-details">
+                        <h3>عقار 2</h3>
+                        <p>وصف عقار 2.</p>
+                    </div>
+                </div>
+
+                <!-- Add more property cards as needed -->
+
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>المميزات الرئيسية</h2>
+            <div class="feature-icon">🏡</div>
+            <p>استكشف مجموعة متنوعة من المنازل التي تناسب نمط حياتك.</p>
+            <div class="feature-icon">🌆</div>
+            <p>مواقع ممتازة مع مناظر خلابة ووسائل الراحة.</p>
+            <div class="feature-icon">💼</div>
+            <p>عقارات تجارية لاحتياجات عملك.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-form">
+        <div class="container">
+            <h2>تواصل معنا</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">اسمك</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">بريدك الإلكتروني</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">رسالتك</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">إرسال الرسالة</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 شركتك العقارية. جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+
+</html>
